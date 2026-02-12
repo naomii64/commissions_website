@@ -6,89 +6,52 @@
     <title>Document</title>
 </head>
 <body>
-    
-    <div style="float: left;">
-        <fieldset>
-            most boring comm website ever :3!
-        </fieldset>
-        <fieldset>
-            <legend>shading:</legend>
-            <div>
-                <input 
-                onchange="onRadioSelection(this)"
-                name="shading" 
-                type="radio" 
-                value="sketch" 
-                id="radio-shading-sketch" 
-                checked/>
-                <label for="radio-shading-sketch">sketch</label>
-            </div>
-            <div>
-                <input 
-                onchange="onRadioSelection(this)"
-                name="shading" 
-                type="radio" 
-                value="black-and-white"
-                id="radio-shading-shaded-black-and-white"/>
-                <label for="radio-shading-shaded-black-and-white">shaded (black and white)</label>
-            </div>
-            <div>
-                <input 
-                onchange="onRadioSelection(this)"
-                name="shading" 
-                type="radio" 
-                value="fully-shaded"
-                id="radio-shading-fully-shaded"/>
-                <label for="radio-shading-fully-shaded">fully shaded and colored</label>
-            </div>
-        </fieldset>
-        <fieldset>
-            <legend>portion of body:</legend>
-            <div>
-                <input 
-                onchange="onRadioSelection(this)"
-                name="portion" 
-                type="radio" 
-                value="head" 
-                id="radio-portion-head" 
-                checked/>
-                <label for="radio-portion-head">head/neck up</label>
-            </div>
-            <div>
-                <input 
-                onchange="onRadioSelection(this)"
-                name="portion" 
-                type="radio" 
-                value="bust-up"
-                id="radio-portion-bust-up"/>
-                <label for="radio-portion-bust-up">bust up</label>
-            </div>
-            <div>
-                <input 
-                onchange="onRadioSelection(this)"
-                name="portion" 
-                type="radio" 
-                value="full-body"
-                id="radio-portion-full-body"/>
-                <label for="radio-portion-full-body">fullbody</label>
-            </div>
-        </fieldset>
-        <fieldset>
-            <legend>price:</legend>
-            <div id="price-display-div"></div>
-        </fieldset>
+    <fieldset>
+        naomii64 comm website :333!! this still a work in progress so you might need to zoom a bit
+    </fieldset>
+
+    <div style="display: flex;">
+        <div>
+            <fieldset>
+                <legend>options:</legend>
+            <!--automatically generate radio selections-->
+            <generate-radio-selection legend="shading:" name="shading">
+                <option value="sketch">sketch</option>
+                <option value="black-and-white">shaded (black and white)</option>
+                <option value="fully-shaded">fully shaded and colored</option>
+            </generate-radio-selection>
+
+            <!--automatically generate radio selections-->
+            <generate-radio-selection legend="portion of body:" name="portion">
+                <option value="head">head/neck up</option>
+                <option value="bust-up">bust up</option>
+                <option value="full-body">fullbody</option>
+            </generate-radio-selection>
+
+            <fieldset>
+                <legend>price:</legend>
+                <div id="price-display-div"></div>
+            </fieldset>
+
+            </fieldset>
+        </div>
+
+        <div>
+            <fieldset>
+                <legend>preview:</legend>
+                <canvas id="preview-canvas" style="height: 400px;"></canvas>
+            </fieldset>
+        </div>
+
     </div>
 
-    <div style="float: right;">
-        <fieldset>
-            <legend>preview:</legend>
-            <canvas id="preview-canvas" style="height: 400px;"></canvas>
-        </fieldset>
-    </div>
+
 </body>
 <!--no dependencies-->
+<script src="scripts/preprocess-radio-menus.js"></script>
 <script src="scripts/rolling-displays.js"></script>
 
+<!--these two rely on eachother i think-->
 <script src="scripts/previewRenderer.js"></script>
 <script src="scripts/inputs.js"></script>
 </html>
