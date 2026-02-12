@@ -1,0 +1,127 @@
+{
+    "imageWidth": 1548,
+    "imageHeight": 1852,
+    "colors": [
+        {
+            "x": 378,
+            "y": 64,
+            "width": 707,
+            "height": 727,
+            "path": "colors\\blonde-0.png"
+        },
+        {
+            "x": 552,
+            "y": 593,
+            "width": 678,
+            "height": 625,
+            "path": "colors\\pink-0.png"
+        },
+        {
+            "x": 744,
+            "y": 1428,
+            "width": 321,
+            "height": 359,
+            "path": "colors\\pink-1.png"
+        },
+        {
+            "x": 447,
+            "y": 253,
+            "width": 126,
+            "height": 154,
+            "path": "colors\\pink-2.png"
+        },
+        {
+            "x": 416,
+            "y": 1400,
+            "width": 328,
+            "height": 329,
+            "path": "colors\\pink-3.png"
+        },
+        {
+            "x": 1064,
+            "y": 377,
+            "width": 272,
+            "height": 278,
+            "path": "colors\\skin-0.png"
+        },
+        {
+            "x": 657,
+            "y": 1195,
+            "width": 148,
+            "height": 126,
+            "path": "colors\\skin-1.png"
+        },
+        {
+            "x": 540,
+            "y": 257,
+            "width": 452,
+            "height": 459,
+            "path": "colors\\skin-2.png"
+        },
+        {
+            "x": 433,
+            "y": 1103,
+            "width": 402,
+            "height": 499,
+            "path": "colors\\skin-3.png"
+        },
+        {
+            "x": 726,
+            "y": 1202,
+            "width": 343,
+            "height": 431,
+            "path": "colors\\skin-4.png"
+        },
+        {
+            "x": 301,
+            "y": 884,
+            "width": 860,
+            "height": 523,
+            "path": "colors\\white-0.png"
+        }
+    ],
+    "greyscales": [
+        {
+            "x": 552,
+            "y": 593,
+            "width": 678,
+            "height": 625,
+            "path": "greyscales\\shade-0.png"
+        },
+        {
+            "x": 447,
+            "y": 253,
+            "width": 126,
+            "height": 154,
+            "path": "greyscales\\shade-1.png"
+        },
+        {
+            "x": 416,
+            "y": 1400,
+            "width": 649,
+            "height": 387,
+            "path": "greyscales\\shade-3.png"
+        },
+        {
+            "x": 433,
+            "y": 257,
+            "width": 903,
+            "height": 1376,
+            "path": "greyscales\\shade-4.png"
+        },
+        {
+            "x": 301,
+            "y": 884,
+            "width": 860,
+            "height": 523,
+            "path": "greyscales\\shade-5.png"
+        },
+        {
+            "x": 378,
+            "y": 64,
+            "width": 707,
+            "height": 727,
+            "path": "greyscales\\shade-6.png"
+        }
+    ]
+}

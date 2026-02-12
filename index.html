@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div style="float: left;">
+        <fieldset>
+            most boring comm website ever :3!
+        </fieldset>
+        <fieldset>
+            <legend>shading:</legend>
+            <div>
+                <input 
+                onchange="onRadioSelection(this)"
+                name="shading" 
+                type="radio" 
+                value="sketch" 
+                id="radio-shading-sketch" 
+                checked/>
+                <label for="radio-shading-sketch">sketch</label>
+            </div>
+            <div>
+                <input 
+                onchange="onRadioSelection(this)"
+                name="shading" 
+                type="radio" 
+                value="black-and-white"
+                id="radio-shading-shaded-black-and-white"/>
+                <label for="radio-shading-shaded-black-and-white">shaded (black and white)</label>
+            </div>
+            <div>
+                <input 
+                onchange="onRadioSelection(this)"
+                name="shading" 
+                type="radio" 
+                value="fully-shaded"
+                id="radio-shading-fully-shaded"/>
+                <label for="radio-shading-fully-shaded">fully shaded and colored</label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>portion of body:</legend>
+            <div>
+                <input 
+                onchange="onRadioSelection(this)"
+                name="portion" 
+                type="radio" 
+                value="head" 
+                id="radio-portion-head" 
+                checked/>
+                <label for="radio-portion-head">head/neck up</label>
+            </div>
+            <div>
+                <input 
+                onchange="onRadioSelection(this)"
+                name="portion" 
+                type="radio" 
+                value="bust-up"
+                id="radio-portion-bust-up"/>
+                <label for="radio-portion-bust-up">bust up</label>
+            </div>
+            <div>
+                <input 
+                onchange="onRadioSelection(this)"
+                name="portion" 
+                type="radio" 
+                value="full-body"
+                id="radio-portion-full-body"/>
+                <label for="radio-portion-full-body">fullbody</label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>price:</legend>
+            <div id="price-display-div"></div>
+        </fieldset>
+    </div>
+
+    <div style="float: right;">
+        <fieldset>
+            <legend>preview:</legend>
+            <canvas id="preview-canvas" style="height: 400px;"></canvas>
+        </fieldset>
+    </div>
+</body>
+<!--no dependencies-->
+<script src="rolling-displays-v2.js"></script>
+
+<script src="previewRenderer.js"></script>
+<script src="inputs.js"></script>
+</html>
